@@ -1,0 +1,75 @@
+&CONTROL
+   calculation     = 'scf'
+   max_seconds     = 165600
+   outdir          = 'pwscf_output'
+   prefix          = 'pwscf'
+   pseudo_dir      = './'
+   verbosity       = 'high'
+/
+
+&SYSTEM
+   ecutwfc         = 180
+   ibrav           = 0
+   input_dft       = 'pbe0'
+   lspinorb        = .true.
+   noncolin        = .true.
+   nat             = 14
+   nbnd            = 224
+   nosym           = .true.
+   ntyp            = 4
+   occupations     = 'fixed'
+   nqx1            = 1
+   nqx2            = 1
+   nqx3            = 1
+!   smearing        = 'mp'
+!   degauss         = 0.00001
+   force_symmorphic = .true.
+   starting_magnetization(2) = 1.0
+   starting_magnetization(3) = -1.0
+   tot_charge      = 0
+/
+
+&ELECTRONS
+   diago_david_ndim = 2
+   electron_maxstep = 100
+   mixing_beta     = 0.25
+   mixing_ndim     = 4
+   startingwfc     = 'atomic+random'
+   startingpot     = 'file'
+   conv_thr        = 0.0005
+/
+
+
+ATOMIC_SPECIES 
+   Bi 208.98 Bi.upf
+   Mn1 54.938 Mn.upf
+   Mn2 54.938 Mn.upf
+   Te 127.6 Te.upf
+
+ATOMIC_POSITIONS bohr
+   Mn1       0.00000000       0.00000000       0.00000000 
+   Mn2       0.00000000       4.72821357      25.76975434 
+   Bi      -4.09475307       7.09232036      32.84715966 
+   Bi       4.09475307       2.36410679       7.07740534 
+   Bi       4.09475307       2.36410679      18.69234901 
+   Bi      -4.09475307       7.09232036      44.46210335 
+   Te      -4.09475307       7.09232036      10.30764404 
+   Te       4.09475307       2.36410679      41.23186463 
+   Te       0.00000000       4.72821358      36.07739838 
+   Te       0.00000000       4.72821357      15.46211030 
+   Te      -4.09475307       7.09232036      22.75675466 
+   Te       4.09475307       2.36410679      28.78275402 
+   Te       0.00000000       4.72821358      48.52650899 
+   Te       0.00000000       4.72821357       3.01299968 
+
+
+K_POINTS automatic
+   6 6 2  0 0 0 
+
+
+CELL_PARAMETERS bohr
+         8.18950614       0.00000000       0.00000000 
+        -4.09475307       7.09232036       0.00000000 
+        -4.09475307       2.36410679      51.53950867 
+
+

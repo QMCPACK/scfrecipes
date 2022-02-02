@@ -1,0 +1,3 @@
+In this directory you will find 2 attempted pbe0 calculations of bulk MnBi2Te4 with AFM ordering and spin-orbit coupling.
+In both cases, the fully relativistic ONCV pseudopotentials are used.
+The 14-atom AFM primitve cell is used for both cases.
