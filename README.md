@@ -13,11 +13,24 @@ In both cases, an error occurs after a few successful Fock matrix updates.
 The error printout reads
 
 ```
-stopping ...
 ZPOTRF exited with INFO=           17             
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Error in routine ZPOTRF (1):                  
 Cholesky failed in invchol.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+stopping ...
+```
+
+### Solution attempts
+
+* Attempt to use `diagonalization = 'cg'`. This leads to the following error:
+```
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    Error in routine  cdiaghg (136):
+     problems computing cholesky
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    stopping ...
 ```
