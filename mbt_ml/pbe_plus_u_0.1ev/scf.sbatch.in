@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -A qmc
+#SBATCH -p skylake
+#SBATCH -J scf
+#SBATCH -t 12:00:00
+#SBATCH -N 8
+#SBATCH --ntasks-per-node=12
+#SBATCH --cpus-per-task=3
+#SBATCH --mem=0
+#SBATCH -o scf.out
+#SBATCH -e scf.err
+#SBATCH --exclusive
+#SBATCH --export=ALL
+
+
+module purge
+module load PE-intel/3.0
+module load mkl
+module load hdf5/1.10.3-intel19
+
+export OMP_NUM_THREADS=3
+mpirun -np 96 /home/8gb/Codes/src/q-e-qe-6.4.1_Feb2021_Compile/q-e-qe-6.4.1/bin/pw.x -k 5  -input scf.in

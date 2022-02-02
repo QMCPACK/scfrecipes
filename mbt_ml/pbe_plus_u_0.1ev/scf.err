@@ -1,0 +1,12 @@
+slurmstepd: error: *** JOB 1896219 ON or-condo-c256 CANCELLED AT 2021-10-23T01:57:15 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[19622,0],0] on node or-condo-c256
+  Remote daemon: [[19622,0],6] on node or-condo-c499
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

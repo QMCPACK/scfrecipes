@@ -1,0 +1,56 @@
+&CONTROL
+   calculation     = 'scf'
+   outdir          = 'pwscf_output'
+   prefix          = 'pwscf'
+   pseudo_dir      = './'
+   verbosity       = 'high'
+/
+
+&SYSTEM
+   degauss         = 0.001
+   ecutwfc         = 600
+   Hubbard_U(2)    = 0.1
+   ibrav           = 0
+   input_dft       = 'pbe'
+   lda_plus_u      = .true.
+   lda_plus_u_kind = 1
+   lspinorb        = .true.
+   nat             = 7
+   noncolin        = .true.
+   ntyp            = 3
+   occupations     = 'smearing'
+   smearing        = 'fermi-dirac'
+   starting_magnetization(2) = 1.0
+   tot_charge      = 0
+/
+
+&ELECTRONS
+   conv_thr        = 1e-10
+   electron_maxstep = 1000
+   mixing_beta     = 0.4
+/
+
+
+ATOMIC_SPECIES 
+   Bi 208.98 Bi.upf
+   Mn 54.938 Mn.ccECP.upf
+   Te 127.6 Te.upf
+
+ATOMIC_POSITIONS bohr
+   Mn       0.00000000       0.00000000      25.76975434 
+   Bi       2.36410679       4.09475307      32.84715966 
+   Bi       4.72821357       0.00000000      18.69234901 
+   Te       0.00000000       0.00000000      36.07739838 
+   Te       0.00000000       0.00000000      15.46211030 
+   Te       2.36410679       4.09475307      22.75675466 
+   Te       4.72821357       0.00000000      28.78275402 
+
+K_POINTS automatic
+   9 9 1  0 0 0 
+
+CELL_PARAMETERS bohr
+         7.09232036      -4.09475307       0.00000000 
+         0.00000000       8.18950614       0.00000000 
+         0.00000000       0.00000000      51.53950867 
+
+
