@@ -1,4 +1,4 @@
-## Monolayer MBT: FM ordering+SOC+PBE
+## Monolayer MBT: FM ordering+SOC+PBE+U
 Located in the `mbt_ml` directory, there are example attempts to run MBT in
 FM ordering with fully relativistic potentials and using the PBE+U
 functional
