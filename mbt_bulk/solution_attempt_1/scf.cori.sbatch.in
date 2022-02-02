@@ -1,0 +1,17 @@
+#!/bin/bash
+##SBATCH --qos=regular
+#SBATCH --qos=debug
+#SBATCH --nodes=64
+#SBATCH --ntasks-per-node=64
+#SBATCH -C haswell
+#SBATCH -t 00:30:00
+#SBATCH -J my_job
+#SBATCH -o scf.out
+#SBATCH -e scf.err
+
+export OMP_NUM_THREADS=1
+
+module load espresso/6.7
+which pw.x
+srun pw.x -nb 16 -nk 4 -input scf.in
+#srun pw.x -nb 16 -input scf.in

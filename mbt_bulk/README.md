@@ -22,7 +22,7 @@ stopping ...
 
 ### Solution attempts
 
-* Attempt to use `diagonalization = 'cg'`. This leads to the following error:
+* In `solution_attempt_1` directory, we attempt to use `diagonalization = 'cg'`. This leads to the following error:
 ```
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     Error in routine  cdiaghg (136):
