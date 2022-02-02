@@ -1,0 +1,104 @@
+&CONTROL
+   calculation     = 'scf'
+   max_seconds     = 3600
+   outdir          = 'pwscf_output'
+   prefix          = 'pwscf'
+   pseudo_dir      = './'
+   verbosity       = 'high'
+   iprint          = 5
+   wf_collect      = .true.
+/
+
+&SYSTEM
+   input_dft       = 'pbe'
+   ecutwfc         = 300
+   ibrav           = 0
+   nat             = 16
+   nbnd            = 160
+   nosym           = .true.
+   ntyp            = 3
+   occupations     = 'fixed'
+   tot_charge      = 0
+   starting_magnetization(1) = 0.15
+   starting_magnetization(2) =-0.15
+   starting_magnetization(3) = 0.00
+
+   lspinorb        = .true.
+   noncolin        = .true.
+
+   lda_plus_u=.true.
+   lda_plus_u_kind = 1
+   Hubbard_U(1)=2.0
+   Hubbard_U(2)=2.0
+
+   starting_ns_eigenvalue(1,1,1) = 0.0
+   starting_ns_eigenvalue(2,1,1) = 1.0
+   starting_ns_eigenvalue(3,1,1) = 1.0
+   starting_ns_eigenvalue(4,1,1) = 0.0
+   starting_ns_eigenvalue(5,1,1) = 0.0
+
+   starting_ns_eigenvalue(1,2,1) = 0.0
+   starting_ns_eigenvalue(2,2,1) = 1.0
+   starting_ns_eigenvalue(3,2,1) = 1.0
+   starting_ns_eigenvalue(4,2,1) = 0.0
+   starting_ns_eigenvalue(5,2,1) = 1.0
+
+   starting_ns_eigenvalue(1,1,2) = 0.0
+   starting_ns_eigenvalue(2,1,2) = 1.0
+   starting_ns_eigenvalue(3,1,2) = 1.0
+   starting_ns_eigenvalue(4,1,2) = 0.0
+   starting_ns_eigenvalue(5,1,2) = 1.0
+
+   starting_ns_eigenvalue(1,2,2) = 0.0
+   starting_ns_eigenvalue(2,2,2) = 1.0
+   starting_ns_eigenvalue(3,2,2) = 1.0
+   starting_ns_eigenvalue(4,2,2) = 0.0
+   starting_ns_eigenvalue(5,2,2) = 0.0
+
+/
+
+&ELECTRONS
+   conv_thr        = 1.0e-6
+   mixing_beta     = 0.3
+/
+
+
+ATOMIC_SPECIES 
+   Ru1 101.07 Ru_frl_rMDF.upf
+   Ru2 101.07 Ru_frl_rMDF.upf
+   Cl 35.453 Cl.ccECP.upf
+
+ATOMIC_POSITIONS bohr
+   Ru1      5.59642394      -6.48622026       0.00000000 
+   Ru2      0.00000000       3.27336484       0.00000000 
+   Ru2      5.59642394       6.48622026       0.00000000 
+   Ru1     -0.00000000      -3.27336484       0.00000000 
+   Cl      -3.89358037       9.75958510       2.51110385 
+   Cl       1.70284357      -0.00000000       2.51110385 
+   Cl       3.89358037       9.75958510      -2.51110385 
+   Cl      -1.70284357       0.00000000      -2.51110385 
+   Cl      -1.93677213      -6.40619166      -2.50788449 
+   Cl       3.65965181       3.35339344      -2.50788449 
+   Cl       1.93677213      -6.40619166       2.50788449 
+   Cl      -3.65965181       3.35339344       2.50788449 
+   Cl       1.93677213       6.40619166       2.50788449 
+   Cl      -3.65965181      -3.35339344       2.50788449 
+   Cl      -1.93677213       6.40619166      -2.50788449 
+   Cl       3.65965181      -3.35339344      -2.50788449 
+
+CELL_PARAMETERS bohr
+        11.19284789       0.00000000       0.00000000 
+         0.00000000      19.51917020       0.00000000 
+        -3.72440787       0.00000000      10.73121305 
+
+K_POINTS crystal
+   8
+         0.00000000       0.00000000       0.00000000       0.00000000
+         0.50000000       0.00000000       0.00000000       1.00000000
+         0.00000000       0.50000000       0.00000000       1.00000000
+         0.50000000       0.50000000      -0.00000000       1.00000000
+         0.00000000       0.00000000       0.50000000       1.00000000
+         0.50000000       0.00000000       0.50000000       1.00000000
+         0.00000000       0.50000000       0.50000000       1.00000000
+         0.50000000       0.50000000       0.50000000       1.00000000
+

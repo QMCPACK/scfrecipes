@@ -1,0 +1,81 @@
+Noncollinear runs of alpha-RuCl3 using DFT+U leads to a non-converging SCF run.
+Using 16 Nodes for 1 hour in Andes/OLCF results in no convergence with oscillating total energy.
+The `estimated scf accuracy` oscillates around `6e-4` Ry:
+
+```
+     estimated scf accuracy    <      78.67301700 Ry
+     estimated scf accuracy    <      17.24603717 Ry
+     estimated scf accuracy    <       1.88576266 Ry
+     estimated scf accuracy    <       0.62131638 Ry
+     estimated scf accuracy    <       1.40534757 Ry
+     estimated scf accuracy    <       0.10660613 Ry
+     estimated scf accuracy    <       0.19488650 Ry
+     estimated scf accuracy    <       0.05853631 Ry
+     estimated scf accuracy    <       0.02529767 Ry
+     estimated scf accuracy    <       0.01014892 Ry
+     estimated scf accuracy    <       0.00645864 Ry
+     estimated scf accuracy    <       0.00370396 Ry
+     estimated scf accuracy    <       0.00109839 Ry
+     estimated scf accuracy    <       0.00128702 Ry
+     estimated scf accuracy    <       0.00129231 Ry
+     estimated scf accuracy    <       0.00106462 Ry
+     estimated scf accuracy    <       0.00077215 Ry
+     estimated scf accuracy    <       0.00078162 Ry
+     estimated scf accuracy    <       0.00079330 Ry
+     estimated scf accuracy    <       0.00076250 Ry
+     estimated scf accuracy    <       0.00075156 Ry
+     estimated scf accuracy    <       0.00076416 Ry
+     estimated scf accuracy    <       0.00079681 Ry
+     estimated scf accuracy    <       0.00079164 Ry
+     estimated scf accuracy    <       0.00078336 Ry
+     estimated scf accuracy    <       0.00076612 Ry
+     estimated scf accuracy    <       0.00078113 Ry
+     estimated scf accuracy    <       0.00072600 Ry
+     estimated scf accuracy    <       0.00066260 Ry
+     estimated scf accuracy    <       0.00065659 Ry
+     estimated scf accuracy    <       0.00065224 Ry
+     estimated scf accuracy    <       0.00066292 Ry
+     estimated scf accuracy    <       0.00064658 Ry
+     estimated scf accuracy    <       0.00062444 Ry
+     estimated scf accuracy    <       0.00060342 Ry
+     estimated scf accuracy    <       0.00060656 Ry
+     estimated scf accuracy    <       0.00060869 Ry
+     estimated scf accuracy    <       0.00062118 Ry
+     estimated scf accuracy    <       0.00061813 Ry
+     estimated scf accuracy    <       0.00063840 Ry
+     estimated scf accuracy    <       0.00064237 Ry
+     estimated scf accuracy    <       0.00064234 Ry
+     estimated scf accuracy    <       0.00064892 Ry
+     estimated scf accuracy    <       0.00065035 Ry
+     estimated scf accuracy    <       0.00065831 Ry
+     estimated scf accuracy    <       0.00064549 Ry
+     estimated scf accuracy    <       0.00064390 Ry
+     estimated scf accuracy    <       0.00064608 Ry
+     estimated scf accuracy    <       0.00067520 Ry
+     estimated scf accuracy    <       0.00061244 Ry
+     estimated scf accuracy    <       0.00061036 Ry
+     estimated scf accuracy    <       0.00062964 Ry
+     estimated scf accuracy    <       0.00060941 Ry
+     estimated scf accuracy    <       0.00060587 Ry
+     estimated scf accuracy    <       0.00060759 Ry
+     estimated scf accuracy    <       0.00060960 Ry
+     estimated scf accuracy    <       0.00061597 Ry
+     estimated scf accuracy    <       0.00062563 Ry
+     estimated scf accuracy    <       0.00063362 Ry
+     estimated scf accuracy    <       0.00067009 Ry
+     estimated scf accuracy    <       0.00068229 Ry
+     estimated scf accuracy    <       0.00068289 Ry
+     estimated scf accuracy    <       0.00068767 Ry
+     estimated scf accuracy    <       0.00068366 Ry
+     estimated scf accuracy    <       0.00067619 Ry
+     estimated scf accuracy    <       0.00067649 Ry
+     estimated scf accuracy    <       0.00068696 Ry
+     estimated scf accuracy    <       0.00066295 Ry
+     estimated scf accuracy    <       0.00072271 Ry
+     estimated scf accuracy    <       0.00066481 Ry
+     estimated scf accuracy    <       0.00065260 Ry
+     estimated scf accuracy    <       0.00064503 Ry
+     estimated scf accuracy    <       0.00064624 Ry
+     estimated scf accuracy    <       0.00065556 Ry
+```
+
