@@ -1,4 +1,4 @@
-## Bulk MBT
+## Bulk MBT: AFM ordering+SOC+PBE0
 Located in the `mbt_bulk` directory, there are example attempts to run MBT in
 A-AFM ordering with fully relativistic ONCV potentials and using a hybrid (PBE0)
 functional
