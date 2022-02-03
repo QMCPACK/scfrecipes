@@ -1,0 +1,9 @@
+Contributor: Joshua Townsend
+
+Description: FeO 4-atom primitive cell in AFM configuration is considered here. Two examples are provided and both use Jarons pseudopotentials. The "exx_example" is pure HF, and fails to converge. I tested extensively the use of "mixing_mode", "exx_div_treatment", "mixing_beta", as well as trying to manually reduce the size of the grids. Reducing "mixing_mode" to very small values, say, 0.01, sometimes worked but not systematically. None of the other inputs helped with convergence.
+
+Additionally, some PBE+U calculations are also provided. These calculations "just work" - provided that you perturb the d-manifold appropriately.
+
+Three different geometries are provided: unstrained, and +/- 10% isochoric rhombohedral strain.
+
+Results from these cells were published in: Townsend et al., PRB 102, 155151 (2020). https://doi.org/10.1103/PhysRevB.102.155151

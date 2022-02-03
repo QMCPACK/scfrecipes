@@ -1,0 +1,56 @@
+&CONTROL
+   calculation     = 'scf'
+   disk_io         = 'low'
+   outdir          = 'pwscf_output'
+   prefix          = 'pwscf'
+   pseudo_dir      = '../../pseudos'
+   tprnfor         = .false.
+   tstress         = .false.
+   wf_collect      = .true.
+   verbosity       = 'high'
+/
+
+&SYSTEM
+   nosym                         = .false.
+   ibrav                         = 1  
+   celldm(1)                     = 7.957594704448392
+   degauss                       = 0.0019
+   ecutwfc                       = 800
+   ecutrho                       = 3200
+   input_dft                     = 'scan'
+   nat                           = 8
+   nbnd                          = 32
+   nspin                         = 2                !spin on
+   ntyp                          = 3
+   occupations                   = 'smearing'
+   smearing                      = 'fermi-dirac'
+   starting_magnetization(1)     =  0.0          !num ups - num downs
+   tot_charge                    = 0
+   tot_magnetization             = 0                ! nm	
+/
+
+&ELECTRONS
+   startingpot      = 'file'
+   conv_thr         = 1e-10
+   diagonalization  = 'david'
+   electron_maxstep = 400
+   mixing_beta      = 0.1
+/
+
+ATOMIC_SPECIES 
+ Fe   55.845  Fe.ccECP.upf
+ Mg   24.305  Mg.ccECP.upf
+ O    15.999   O.ccECP.upf
+
+K_POINTS automatic
+   2 2 2  0 0 0
+
+ATOMIC_POSITIONS crystal
+ Fe   0.0000000000   0.0000000000   0.0000000000
+ Mg   0.0000000000   0.5000000000   0.5000000000
+ Mg   0.5000000000   0.0000000000   0.5000000000
+ Mg   0.5000000000   0.5000000000   0.0000000000
+  O   0.5000000000   0.5000000000   0.5000000000
+  O   0.5000000000   0.0000000000   0.0000000000
+  O   0.0000000000   0.5000000000   0.0000000000
+  O   0.0000000000   0.0000000000   0.5000000000

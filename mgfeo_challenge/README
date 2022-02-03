@@ -1,0 +1,5 @@
+Contributor: Joshua Townsend
+
+Description: A selection of XC-functionals applied to an 8-atom cell of (Mg_0.75,Fe_0.25)O using NCSU ccECPs.
+Two magnetic configurations are included: hi-spin ferromagnetic and low-spin non-magnetic. PBE, PBE0, SCAN, and PBE+U all work
+very well on these cells in both spin configurations. Note that AFM is not possible for a single Fe defect, so it was not considered here. Tests on a larger 64-atom AFM configuration (2x2x2 supercell of this unitcell) showed that PBE and PBE+U successfully converged, but EXX and SCAN tests were not possible due to prohibitive memory costs because of the large cutoffs required.

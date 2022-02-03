@@ -3,7 +3,7 @@
    disk_io         = 'low'
    outdir          = 'pwscf_output'
    prefix          = 'pwscf'
-   pseudo_dir      = '../'
+   pseudo_dir      = '../../pseudos'
    tprnfor         = .false.
    tstress         = .false.
    wf_collect      = .true.
