@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -A qmc
+#SBATCH -p skylake
+#SBATCH -J p2q
+#SBATCH -t 12:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=36
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=0
+#SBATCH -o p2q.out
+#SBATCH -e p2q.err
+#SBATCH --exclusive
+#SBATCH --export=ALL
+
+                       
+    module purge 
+    module load PE-intel/3.0
+    module load mkl
+    module load hdf5_parallel/1.10.3
+    
+export OMP_NUM_THREADS=1
+mpirun -np 36 /home/8gb/Codes/src/q-e-qe-6.4.1/bin/pw2qmcpack.x -input p2q.in > p2q.out

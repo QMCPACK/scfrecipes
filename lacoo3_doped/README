@@ -1,0 +1,20 @@
+Contributor: Tomohiro Ichibha
+
+
+co.mn.para
+    Co atom is replaced by Mn in LaCoO3 with AFM spin order. 
+    The magnetization of Mn is parallel to the replaced Co. 
+
+co.ni.para
+    Co atom is replaced by Ni in LaCoO3 with AFM spin order. 
+    The magnetization of Ni is parallel to the replaced Co. 
+
+We encountered the same issue for both cases:
+the 'estimated scf accuracy' vibrates above 2e-5 and does not get reduced further. 
+
+The QE output files are 
+
+    scf.out.1: mixing_beta=0.2
+    scf.out.2: mixing_beta=0.1
+
+The smaller mixing_beta did not work to solve the issue. 
