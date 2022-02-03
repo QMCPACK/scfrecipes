@@ -1,0 +1,330 @@
+2
+2
+2
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+2
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AF50E93D630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AF50E939A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002AF514C84B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002AF514C4E5E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002AF50F7A0D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002AF5148299D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002AF50F766E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002AF50E352FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002AF50E0E938A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF50EB6C555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B0502BCB630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B0502BC7A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B0508F12B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B0508EDC5E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B0503A2ED32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B0508AB79D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B05039F4E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B05025E0FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B050237738A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0502DFA555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B3218EC6630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B3218EC2A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B321F20DB27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B321F1D75E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B3219D29D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B321EDB29D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B3219CEFE73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B32188DBFB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B321867238A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B32190F5555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B2CDDEBD630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B2CDDEB9A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B2CE4204B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B2CE41CE5E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B2CDED20D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B2CE3DA99D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B2CDECE6E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B2CDD8D2FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B2CDD66938A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2CDE0EC555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B4DA8FF7630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B4DA8FF3A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B4DAF33EB27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B4DAF3085E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B4DA9E5AD32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B4DAEEE39D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B4DA9E20E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B4DA8A0CFB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B4DA87A338A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4DA9226555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B2C9C840630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B2C9C83CA33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B2CA2B87B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B2CA2B515E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B2C9D6A3D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B2CA272C9D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B2C9D669E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B2C9C255FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B2C9BFEC38A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2C9CA6F555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002BA988731630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002BA98872DA33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002BA98EA78B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002BA98EA425E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002BA989594D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002BA98E61D9D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002BA98955AE73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002BA988146FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002BA987EDD38A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA988960555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B1CB0FAD630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B1CB0FA9A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B1CB72F4B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B1CB72BE5E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B1CB1E10D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B1CB6E999D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B1CB1DD6E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B1CB09C2FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B1CB075938A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1CB11DC555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B3A95F5E630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B3A95F5AA33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B3A9C2A5B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B3A9C26F5E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B3A96DC1D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B3A9BE4A9D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B3A96D87E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B3A95973FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B3A9570A38A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3A9618D555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B8444EE8630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B8444EE4A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B844B22FB27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B844B1F95E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B8445D4BD32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B844ADD49D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B8445D11E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B84448FDFB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B844469438A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8445117555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AC1F0230630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AC1F022CA33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002AC1F6577B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002AC1F65415E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002AC1F1093D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002AC1F611C9D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002AC1F1059E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002AC1EFC45FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002AC1EF9DC38A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AC1F045F555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002ABE0C406630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002ABE0C402A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002ABE1274DB27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002ABE127175E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002ABE0D269D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002ABE122F29D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002ABE0D22FE73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002ABE0BE1BFB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002ABE0BBB238A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABE0C635555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+2
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AEDE6534630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002AEDE6530A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002AEDEC87BB27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002AEDEC8455E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002AEDE7397D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002AEDEC4209D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002AEDE735DE73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002AEDE5F49FB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002AEDE5CE038A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AEDE6763555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B5A5D63A630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B5A5D636A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B5A63981B27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B5A6394B5E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B5A5E49DD32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B5A635269D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B5A5E463E73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B5A5D04FFB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B5A5CDE638A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5A5D869555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+pw.x               0000000001381E7E  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B82161D6630  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B82161D2A33  pthread_cond_wait     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B821C51DB27  OPAL_MCA_PMIX2X_P     Unknown  Unknown
+mca_pmix_pmix2x.s  00002B821C4E75E8  pmix2x_client_fin     Unknown  Unknown
+libopen-rte.so.40  00002B8217039D32  orte_ess_base_app     Unknown  Unknown
+mca_ess_pmi.so     00002B821C0C29D6  Unknown               Unknown  Unknown
+libopen-rte.so.40  00002B8216FFFE73  orte_finalize         Unknown  Unknown
+libmpi.so.40.10.4  00002B8215BEBFB7  ompi_mpi_finalize     Unknown  Unknown
+libmpi_mpifh.so.4  00002B821598238A  pmpi_finalize__       Unknown  Unknown
+pw.x               000000000083A230  mp_world_mp_mp_wo         100  mp_world.f90
+pw.x               000000000059A64C  stop_run_                  53  stop_run.f90
+pw.x               000000000040ED08  MAIN__                     89  pwscf.f90
+pw.x               000000000040EB5E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8216405555  __libc_start_main     Unknown  Unknown
+pw.x               000000000040EA63  Unknown               Unknown  Unknown
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[24384,1],62]
+  Exit code:    2
+--------------------------------------------------------------------------

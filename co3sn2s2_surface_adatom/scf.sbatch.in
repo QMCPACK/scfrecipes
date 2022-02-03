@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH -A theory
+#SBATCH -p batch
+#SBATCH -J scf
+#SBATCH -t 23:00:00
+#SBATCH -N 4
+#SBATCH --ntasks-per-node=16
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=0
+#SBATCH -o scf.out
+#SBATCH -e scf.err
+#SBATCH --exclusive
+#SBATCH --export=ALL
+
+
+module purge
+module load PE-intel/3.0
+
+export OMP_NUM_THREADS=1
+mpirun -np 64 /home/j1k/apps/quantum_espresso/qe-6.3/bin/pw.x -input scf.in

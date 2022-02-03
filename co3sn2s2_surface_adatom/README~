@@ -1,0 +1,3 @@
+Contributor: Jaron T. Krogel
+
+This system is a model of a Co3Sn2S2 surface with a single S atom adsorbed.  Various combinations of mixing_beta/degauss were tried.  Limited computational resources were used here, so this might turn out to be an easier challenge case in the limit of larger iteration counts.
